@@ -1,3 +1,4 @@
+# Table Class
 class Table
   attr_reader :x, :y
 

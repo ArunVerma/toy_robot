@@ -1,3 +1,4 @@
+# Action class
 class Action
   # Place method
   # @param command [String]

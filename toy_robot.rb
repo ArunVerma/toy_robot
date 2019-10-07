@@ -1,5 +1,4 @@
-
-#!/usr/bin/ruby
+# !/usr/bin/ruby
 require_relative './lib/action'
 require_relative './lib/table'
 require_relative './lib/robot'
@@ -11,6 +10,7 @@ $stdout.print "Options: PLACE X,Y,F; MOVE; LEFT; RIGHT; REPORT; EXIT\n"
 loop do
   input = gets.chomp
   next if input.empty?
+
   unless 'EXIT'.match?(input)
     command.interpret(input)
     next

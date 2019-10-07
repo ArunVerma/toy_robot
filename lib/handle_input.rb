@@ -5,7 +5,7 @@ class HandleInput
   attr_accessor :robot, :table, :action
 
   # Command Options
-  PLACE   = /^PLACE\s+\d+\s*,\s*\d+\s*,\s*(WEST||NORTH||EAST||SOUTH)$/
+  PLACE   = /^PLACE\s+\d+\s*,\s*\d+\s*,\s*(WEST||NORTH||EAST||SOUTH)$/.freeze
   ACTIONS = %w[MOVE LEFT RIGHT REPORT].freeze
 
   def initialize(robot, table, action)
